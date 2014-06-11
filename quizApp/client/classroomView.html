@@ -1,0 +1,12 @@
+<template name="classroomClient">
+  <div id='classroomContainer'>
+    <div id='classroomTitle'>
+      All Appropriate Messages
+    </div>
+   <div id='classroomHistory'>
+      {{#each lines}}
+        <b>{{this.username}}</b>: {{this.messageContent}}<br>
+      {{/each}}
+    </div>
+  </div>
+</template>
